@@ -1,0 +1,51 @@
+html, body {
+	 padding: 0;
+	 margin: 0;
+}
+
+.noPrint,
+#header > *,
+#sidebar,
+#main > div,
+#main #main-content > div
+{
+	 display:none;
+}
+
+#header h1,
+#main #main-content,
+#main #main-content #page-content {
+	 display: block;
+}
+
+#main #history {
+	 display: none !important;
+}
+
+#header h1 {
+	 font-size: .75em;
+	 position: absolute;
+	 top: 1px;
+	 right: 1px;
+	 border: 2px solid #aaa;
+	 border-width: 0 0 0 3px;
+	 padding: 0.2em;
+	 margin: 0px;
+}
+	 #header h1 a {
+		  color: #555;
+		  text-decoration: none;
+		  font-weight: normal;
+	 }
+
+body {
+	 font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	 font-family: Helvetica, “Helvetica Neue”, Arial, sans-serif;
+}
+
+h4.printOnly {
+	 margin-top: 3em;
+}
