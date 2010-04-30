@@ -4,4 +4,13 @@ Uses git to store pages and revisions and a SQLite db for indexing pages for sea
 
 Uses mod rewrite.
 
+Must be installed at the root of the domain, e.g. wiki.example.com
+
+To install
+=-=-=-=-=-=
+wget http://github.com/kelvinj/Giiki/zipball/master
+unzip kelvinj-Giiki-123456789.zip
+mv kelvinj-Giiki-123456789/ wiki.example.com/
+
+
 more install intructions to follow.
