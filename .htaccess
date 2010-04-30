@@ -1,0 +1,23 @@
+## Rewrite all .html queries to giiki.php
+
+RewriteEngine On
+
+RewriteCond %{QUERY_STRING} "rw="
+RewriteRule (.*) - [L]
+
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /dispatch.php?view&p=$1&rw=1 [QSA,L]
+
+RewriteCond %{REQUEST_URI} !^/giiki
+RewriteCond %{REQUEST_URI} \.html$
+RewriteRule ^(.*)$ /dispatch.php?view&p=$1&rw=1 [QSA,L]
+
+RewriteCond %{REQUEST_URI} !^/giiki
+RewriteCond %{REQUEST_URI} !^/_
+RewriteCond %{REQUEST_URI} \.php$
+RewriteRule	^(.*)$	/dispatch.php?script&p=$1&rw=1 [QSA,L]
+
+RewriteCond %{REQUEST_URI} !^/giiki
+RewriteCond %{REQUEST_URI} !\.html$
+RewriteCond %{REQUEST_URI} !\.php$
+RewriteRule ^(.*)$	/data/$1?rw=1 [QSA,L]

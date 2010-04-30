@@ -1,0 +1,7 @@
+Giiki (Git Wiki)
+
+Uses git to store pages and revisions and a SQLite db for indexing pages for search and user management.
+
+Uses mod rewrite.
+
+more install intructions to follow.
