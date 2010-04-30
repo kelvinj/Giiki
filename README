@@ -20,4 +20,23 @@ p: password
 
 You can change the password once you're in.
 
+Mod Rewrite
+=-=-=-=-=-=-=
+The mod-rewrite rules can be found in .htaccess. Here's an example vhost config:
+
+<VirtualHost *:80>
+    DocumentRoot "/var/www/example.com/wiki"
+    ServerName wiki.example.com
+    ServerAdmin kelvinj@gmail.com
+
+    <Directory "/var/www/example.com/wiki">
+        Options FollowSymLinks
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+</VirtualHost>
+
+
 more install intructions to follow.
