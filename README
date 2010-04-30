@@ -12,5 +12,6 @@ wget http://github.com/kelvinj/Giiki/zipball/master
 unzip kelvinj-Giiki-123456789.zip
 mv kelvinj-Giiki-123456789/ wiki.example.com/
 
+vi wiki.example.com/giiki/options.php
 
 more install intructions to follow.
