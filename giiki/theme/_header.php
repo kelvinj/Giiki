@@ -14,7 +14,7 @@ $current_user = $g->get_logged_in_user();
 <!doctype html>
 <html dir="ltr" lang="en-US">
 <head>
-    <title><?php echo $g->get_page_name(true); ?> ; <?php echo $g->get_site_name(); ?></title>
+    <title><?php h($g->get_page_name(true)); ?> ; <?php h($g->get_site_name()); ?></title>
 
 	<link rel="stylesheet" href="/giiki/theme/assets/base.css" type="text/css" media="screen"/>
     <link rel="stylesheet" id="current-theme" href="/giiki/theme/assets/style.css" type="text/css" media="screen"/>
