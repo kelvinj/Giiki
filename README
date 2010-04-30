@@ -14,4 +14,10 @@ mv kelvinj-Giiki-123456789/ wiki.example.com/
 
 vi wiki.example.com/giiki/options.php
 
+Default login:
+u: admin
+p: password
+
+You can change the password once you're in.
+
 more install intructions to follow.
